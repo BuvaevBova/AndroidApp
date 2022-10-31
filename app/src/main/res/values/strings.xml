@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidApp</string>
+    <string name="text_view_label">Text View</string>
+</resources>

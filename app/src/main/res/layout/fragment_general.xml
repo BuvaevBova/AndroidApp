@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding20"
         android:layout_marginHorizontal="@dimen/padding8"
-        android:text="@string/text_view_label"/>
+        android:text="@string/text_view_label"
+        style="@style/AAButton"/>
 
 </LinearLayout>

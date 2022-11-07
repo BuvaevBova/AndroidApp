@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/button_disabled.xml" value="0.1" />
+        <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/button_pressed.xml" value="0.121" />
+        <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/selector_button_background.xml" value="0.1685" />
+        <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/selector_button_color.xml" value="0.1685" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/fragment_general.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/fragment_text_view.xml" value="0.22826086956521738" />

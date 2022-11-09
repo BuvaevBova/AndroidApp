@@ -10,7 +10,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        openGeneralFragment()
+        if (supportFragmentManager.backStackEntryCount == 0) {
+            openGeneralFragment()
+        }
     }
 
     private fun openGeneralFragment() {
@@ -28,4 +30,6 @@ class MainActivity : AppCompatActivity() {
             addToBackStack(GeneralFragment.TAG)
         }
     }
+
+
 }

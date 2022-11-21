@@ -10,8 +10,13 @@
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/selector_button_background.xml" value="0.1685" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/selector_button_color.xml" value="0.1685" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/selector_button_text_color.xml" value="0.137" />
+        <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/selector_et_background.xml" value="0.1895" />
+        <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/shape_corner_bg_active.xml" value="0.1895" />
+        <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/drawable/shape_corner_bg_gray.xml" value="0.1895" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/edit_text.xml" value="0.2210144927536232" />
+        <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/fragment_button.xml" value="0.24864130434782608" />
+        <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/fragment_edit_text.xml" value="0.2" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/fragment_general.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/fragment_text_view.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Lulu/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/text_view.xml" value="0.22826086956521738" />

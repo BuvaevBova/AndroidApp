@@ -1,5 +1,6 @@
-package com.example.androidapp
+package AndroidApp
 
+import EditText.EditTextFragment
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.add
@@ -31,5 +32,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun openEditTextFragment() {
+        supportFragmentManager.commit {
+            replace<EditTextFragment>(R.id.am_fcv_fragment_container)
+            setReorderingAllowed(true)
+            addToBackStack(GeneralFragment.TAG)
 
+        }
+    }
 }

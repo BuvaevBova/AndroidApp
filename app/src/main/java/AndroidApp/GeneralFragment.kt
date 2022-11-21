@@ -1,4 +1,4 @@
-package com.example.androidapp
+package AndroidApp
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -28,5 +28,7 @@ class GeneralFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding?.fgBtnTextViewFragment?.setOnClickListener { (activity as? MainActivity)?.openTextViewFragment() }
+        binding?.fgBtnEditText?.setOnClickListener { (activity as? MainActivity)?.openEditTextFragment() }
+
     }
 }

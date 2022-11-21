@@ -7,6 +7,12 @@
     <string name="textview_casual_font">textview casual font</string>
     <string name="textmediumblack_style">TextMediumBlack Style</string>
     <string name="textbigblack_style">TextBigBlack Style</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="has_not_focus">EditText has not focus</string>
+    <string name="has_focus">EditText has focus</string>
+    <string name="button_with_icon">Button with icon</string>
+    <string name="button_with_drawable">button with drawable</string>
 
 
 </resources>

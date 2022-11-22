@@ -1,11 +1,10 @@
-package AndroidApp
-
-import EditText.EditTextFragment
+package com.example.androidapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import com.example.androidapp.edit_text.EditTextFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package EditText
+package com.example.androidapp.edit_text
 
 import android.os.Bundle
 import android.text.Editable

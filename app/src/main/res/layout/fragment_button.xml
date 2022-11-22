@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fet_ll_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,6 +38,15 @@
             android:drawableEnd="@android:drawable/ic_menu_send"
             android:text="@string/button_with_drawable"
             android:paddingHorizontal="20dp"/>
+
+        <com.example.androidapp.button.ProgressButton
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/progress_button"
+            app:text_color="@color/color_white"
+            app:text="Progress button"
+            app:progress_color="@color/color_white"/>
 
 
 

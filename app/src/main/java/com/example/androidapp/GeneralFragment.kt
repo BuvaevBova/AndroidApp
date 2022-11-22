@@ -29,6 +29,6 @@ class GeneralFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding?.fgBtnTextViewFragment?.setOnClickListener { (activity as? MainActivity)?.openTextViewFragment() }
         binding?.fgBtnEditText?.setOnClickListener { (activity as? MainActivity)?.openEditTextFragment() }
-
+        binding?.fgBtnButton?.setOnClickListener{(activity as? MainActivity)?.openButtonFragment()}
     }
 }

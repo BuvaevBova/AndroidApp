@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.widget.FrameLayout
 import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.core.view.isVisible
 import com.example.androidapp.R
 
 class ProgressButton : FrameLayout {
@@ -38,6 +39,12 @@ class ProgressButton : FrameLayout {
         textPB.text = textOnButton
         textPB.setTextColor(textColor)
         progressPB.indeterminateTintList = ColorStateList.valueOf(progressColor)
+        setProgressState(false)
+    }
+
+    fun setProgressState(isProgress: Boolean) {
+        textPB.isVisible = !isProgress
+        progressPB.isVisible = isProgress
 
     }
 
@@ -72,11 +79,11 @@ class ProgressButton : FrameLayout {
                         resources.getColor(R.color.black)
                     }
 
-                }}
-                finally {
-                    attribute.recycle()
                 }
-
+            } finally {
+                attribute.recycle()
             }
+
         }
     }
+}

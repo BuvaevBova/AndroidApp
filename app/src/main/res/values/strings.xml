@@ -13,6 +13,7 @@
     <string name="has_focus">EditText has focus</string>
     <string name="button_with_icon">Button with icon</string>
     <string name="button_with_drawable">button with drawable</string>
+    <string name="buttons_text">Buttons</string>
 
 
 </resources>

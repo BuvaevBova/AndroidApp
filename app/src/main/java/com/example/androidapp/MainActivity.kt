@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import com.example.androidapp.button.ButtonFragment
 import com.example.androidapp.edit_text.EditTextFragment
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +38,13 @@ class MainActivity : AppCompatActivity() {
             setReorderingAllowed(true)
             addToBackStack(GeneralFragment.TAG)
 
+        }
+    }
+    fun openButtonFragment(){
+        supportFragmentManager.commit{
+            replace<ButtonFragment>(R.id.am_fcv_fragment_container)
+            setReorderingAllowed(true)
+            addToBackStack(GeneralFragment.TAG)
         }
     }
 }

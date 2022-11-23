@@ -11,16 +11,15 @@ import extension.toast
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
-class ButtonFragment : Fragment(), CoroutineScope {
+class ButtonFragment : Fragment() {
 
     companion object {
         const val TAG = "ButtonFragmentTag"
     }
 
-    override val coroutineContext: CoroutineContext
-        get() = Job() + Dispatchers.Main
-
     private var binding: FragmentButtonBinding? = null
+
+    private var presenter = ButtonPresenter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,16 +32,14 @@ class ButtonFragment : Fragment(), CoroutineScope {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        presenter.attach(this)
         setupViews()
         binding?.fbPbProgressButton?.setOnClickListener {
-            launch {
-                binding?.fbPbProgressButton?.setProgressState(true)
-                delay(3000)
-                binding?.fbPbProgressButton?.setProgressState(false)
-            }
+            presenter.onProgressButtonClick()
         }
         binding?.buttonDrawable?.setOnClickListener {
-            toast(msg = getString(R.string.click_button))
+            presenter.onButtonDrawableClick()
+
         }
     }
 
@@ -58,6 +55,14 @@ class ButtonFragment : Fragment(), CoroutineScope {
             }
             title = getString(R.string.buttons_text)
         }
+    }
+
+    fun setProgressStateProgressButton(isProgress: Boolean) {
+        binding?.fbPbProgressButton?.setProgressState(isProgress)
+    }
+
+    fun showToast() {
+        toast(msg = getString(R.string.click_button))
     }
 }
 

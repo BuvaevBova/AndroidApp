@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.androidapp.R
 import com.example.androidapp.databinding.FragmentButtonBinding
+import extension.toast
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
@@ -39,6 +40,9 @@ class ButtonFragment : Fragment(), CoroutineScope {
                 delay(3000)
                 binding?.fbPbProgressButton?.setProgressState(false)
             }
+        }
+        binding?.buttonDrawable?.setOnClickListener {
+            toast(msg = getString(R.string.click_button))
         }
     }
 

@@ -7,29 +7,65 @@
 
     <Button
         android:id="@+id/fg_btn_text_view_fragment"
+        style="@style/AAButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/padding20"
         android:layout_marginHorizontal="@dimen/padding8"
-        android:text="@string/text_view_label"
-        style="@style/AAButton" />
+        android:layout_marginTop="@dimen/padding20"
+        android:text="@string/text_view_label" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="8dp"
         android:id="@+id/fg_btn_edit_text"
-        android:text="EditText"
-        style="@style/AAButton"/>
-
-    <Button
+        style="@style/AAButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="20dp"
+        android:text="EditText" />
+
+    <Button
         android:id="@+id/fg_btn_button"
-        android:text="Button"
-        style="@style/AAButton"/>
+        style="@style/AAButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/fg_btn_app_bar"
+        style="@style/AAButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_bar" />
+
+    <Button
+        android:id="@+id/fg_btn_toolbar"
+        style="@style/AAButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/toolbar" />
+
+    <Button
+        android:id="@+id/fg_btn_spinner"
+        style="@style/AAButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/spinner" />
+
+    <Button
+        android:id="@+id/fg_btn_adapter_view"
+        style="@style/AAButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/adapterview" />
 
 </LinearLayout>

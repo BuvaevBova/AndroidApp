@@ -17,7 +17,7 @@ class GeneralFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
         val fragmentGeneralBinding = FragmentGeneralBinding.inflate(inflater, container, false)
@@ -29,6 +29,9 @@ class GeneralFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding?.fgBtnTextViewFragment?.setOnClickListener { (activity as? MainActivity)?.openTextViewFragment() }
         binding?.fgBtnEditText?.setOnClickListener { (activity as? MainActivity)?.openEditTextFragment() }
-        binding?.fgBtnButton?.setOnClickListener{(activity as? MainActivity)?.openButtonFragment()}
+        binding?.fgBtnButton?.setOnClickListener { (activity as? MainActivity)?.openButtonFragment() }
+        binding?.fgBtnAppBar?.setOnClickListener { (activity as? MainActivity)?.openAppBarFragment() }
+        binding?.fgBtnToolbar?.setOnClickListener { (activity as? MainActivity)?.openToolbarFragment() }
+        binding?.fgBtnSpinner?.setOnClickListener { (activity as? MainActivity)?.openSpinnerFragment() }
     }
 }

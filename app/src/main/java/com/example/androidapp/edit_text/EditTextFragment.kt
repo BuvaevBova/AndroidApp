@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.androidapp.R
 import com.example.androidapp.databinding.FragmentEditTextBinding
+import extension.toast
 
 class EditTextFragment : Fragment() {
     var binding: FragmentEditTextBinding? = null
@@ -16,6 +17,8 @@ class EditTextFragment : Fragment() {
     companion object {
         val TAG = "FragmentEditTextTag"
     }
+
+    private var presenter = EditTextPresenter()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,11 +32,14 @@ class EditTextFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        presenter.attach(this)
         setupViews()
         binding?.loginBtn?.isEnabled = false
         binding?.loginBtn?.setOnClickListener {
-            binding?.loginText?.text = binding?.fetTietLogin?.text
-            binding?.textPassword?.text = binding?.fetTietPassword?.text
+            presenter.onLoginBtnClick(
+                binding?.fetTietLogin?.text.toString(),
+                binding?.fetTietPassword?.text.toString()
+            )
         }
 
         binding?.fetTietLogin?.addTextChangedListener(object : TextWatcher {
@@ -97,5 +103,17 @@ class EditTextFragment : Fragment() {
             }
             title = "Edit Text"
         }
+    }
+
+    fun loginSuccess() {
+        toast("loginSuccess")
+    }
+
+    fun showLogin(login: String) {
+        binding?.loginText?.text = login
+    }
+
+    fun showPassword(password: String) {
+        binding?.textPassword?.text = password
     }
 }
